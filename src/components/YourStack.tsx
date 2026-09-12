@@ -1,3 +1,5 @@
+import { toast } from "react-toastify";
+
 interface Technology {
   id: string;
   name: string;
@@ -21,16 +23,28 @@ function YourStack({
 
   // Remove one technology
   const handleRemove = (id: string) => {
+    const removedTechnology = stack.find(
+      (technology) => technology.id === id
+    );
+
     setStack(
       stack.filter(
         (technology) => technology.id !== id
       )
     );
+
+    if (removedTechnology) {
+      toast.success(
+        `${removedTechnology.name} removed from your stack!`
+      );
+    }
   };
 
   // Remove all technologies
   const handleRemoveAll = () => {
     setStack([]);
+
+    toast.success("All technologies removed!");
   };
 
   return (
@@ -62,16 +76,10 @@ function YourStack({
 
         <div className="rounded-xl border border-dashed border-gray-300 bg-gray-50 p-6 text-center">
 
-          <div className="mb-3 text-3xl">
-            🧰
-          </div>
 
-          <p className="text-sm font-medium text-gray-700">
-            No technologies selected
-          </p>
 
           <p className="mt-2 text-xs leading-5 text-gray-400">
-            Add technologies from the list to build your stack.
+           Your stack is empty.
           </p>
 
         </div>

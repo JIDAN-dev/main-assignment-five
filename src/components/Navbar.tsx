@@ -38,7 +38,7 @@ function Navbar() {
             Sign In
           </button>
 
-          <button className="rounded-full bg-gradient-to-r from-orange-500 via-pink-500 to-violet-600 px-4 py-2 text-sm font-medium text-white">
+          <button className="rounded-full  bg-pink-600 px-4 py-2 text-sm font-medium text-white">
             Sign Up
           </button>
         </div>

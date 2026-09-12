@@ -21,11 +21,11 @@ function Hero() {
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <button className="rounded-full bg-gradient-to-r from-orange-500 via-pink-500 to-violet-600 px-6 py-3 font-semibold text-white">
+            <button className="rounded-2xl bg-gradient-to-r from-orange-500 via-pink-500 to-orange-600 px-6 py-3 font-semibold text-white">
               Explore Technologies
             </button>
 
-            <button className="rounded-full border border-gray-300 px-6 py-3 font-semibold text-gray-700">
+            <button className="rounded-2xl border border-gray-300 px-6 py-3 font-semibold text-gray-700">
               Learn More
             </button>
           </div>

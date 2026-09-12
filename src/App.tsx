@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import TechnologySection from "./components/TechnologySection";
 import YourStack from "./components/YourStack";
+import Footer from "./components/Footer";
 
 interface Technology {
   id: string;
@@ -24,6 +25,8 @@ function App() {
 
       <Hero />
 
+     
+
       <main className="mx-auto max-w-7xl px-6 py-12">
 
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-[1fr_320px]">
@@ -40,7 +43,9 @@ function App() {
 
         </div>
 
-      </main>
+      </main> 
+      
+      < Footer/>
     </>
   );
 }
