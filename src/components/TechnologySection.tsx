@@ -37,6 +37,7 @@ function TechnologySection({
   return (
     <section>
 
+      {/* Section Heading */}
       <div className="mb-8">
         <h2 className="text-3xl font-bold text-gray-900">
           Explore the{" "}
@@ -50,6 +51,7 @@ function TechnologySection({
         </p>
       </div>
 
+      {/* Technology Cards */}
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {technologies.map((technology) => (
           <TechnologyCard

@@ -19,12 +19,16 @@ function YourStack({
   setStack,
 }: YourStackProps) {
 
+  // Remove one technology
   const handleRemove = (id: string) => {
     setStack(
-      stack.filter((technology) => technology.id !== id)
+      stack.filter(
+        (technology) => technology.id !== id
+      )
     );
   };
 
+  // Remove all technologies
   const handleRemoveAll = () => {
     setStack([]);
   };
@@ -32,58 +36,84 @@ function YourStack({
   return (
     <aside className="h-fit rounded-2xl border border-gray-200 bg-white p-5 shadow-sm lg:sticky lg:top-24">
 
-      <div className="mb-5">
-        <h2 className="text-xl font-bold text-gray-900">
-          Your Stack
-        </h2>
+      {/* Header */}
+      <div className="mb-5 flex items-center justify-between">
 
-        <p className="mt-1 text-sm text-gray-500">
-          {stack.length} Technologies Selected
-        </p>
+        <div>
+          <h2 className="text-xl font-bold text-gray-900">
+            Your Stack
+          </h2>
+
+          <p className="mt-1 text-sm text-gray-500">
+            {stack.length} Technologies Selected
+          </p>
+        </div>
+
+        {stack.length > 0 && (
+          <span className="rounded-full bg-gray-100 px-3 py-1 text-xs font-semibold text-gray-600">
+            {stack.length}
+          </span>
+        )}
+
       </div>
 
+      {/* Empty State */}
       {stack.length === 0 ? (
 
-        <div className="rounded-xl bg-gray-50 p-6 text-center">
-          <p className="text-sm text-gray-500">
-            No technologies selected yet.
+        <div className="rounded-xl border border-dashed border-gray-300 bg-gray-50 p-6 text-center">
+
+          <div className="mb-3 text-3xl">
+            🧰
+          </div>
+
+          <p className="text-sm font-medium text-gray-700">
+            No technologies selected
           </p>
 
-          <p className="mt-2 text-xs text-gray-400">
+          <p className="mt-2 text-xs leading-5 text-gray-400">
             Add technologies from the list to build your stack.
           </p>
+
         </div>
 
       ) : (
 
+        /* Selected Technologies */
         <div className="space-y-3">
 
           {stack.map((technology) => (
 
             <div
               key={technology.id}
-              className="flex items-center gap-3 rounded-xl border border-gray-100 p-3"
+              className="flex items-center gap-3 rounded-xl border border-gray-100 bg-gray-50 p-3"
             >
 
-              <img
-                src={technology.icon}
-                alt={technology.name}
-                className="h-9 w-9 object-contain"
-              />
+              {/* Icon */}
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white">
+                <img
+                  src={technology.icon}
+                  alt={technology.name}
+                  className="h-7 w-7 object-contain"
+                />
+              </div>
 
-              <div className="flex-1">
-                <h3 className="text-sm font-semibold text-gray-900">
+              {/* Name + Category */}
+              <div className="min-w-0 flex-1">
+
+                <h3 className="truncate text-sm font-semibold text-gray-900">
                   {technology.name}
                 </h3>
 
-                <p className="text-xs text-gray-500">
+                <p className="mt-1 text-xs text-gray-500">
                   {technology.category}
                 </p>
+
               </div>
 
+              {/* Remove */}
               <button
                 onClick={() => handleRemove(technology.id)}
-                className="text-lg text-gray-400 hover:text-red-500"
+                className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-gray-400 transition hover:bg-red-50 hover:text-red-500"
               >
                 ✕
               </button>
@@ -96,13 +126,16 @@ function YourStack({
 
       )}
 
+      {/* Remove All */}
       {stack.length > 0 && (
+
         <button
           onClick={handleRemoveAll}
-          className="mt-5 w-full rounded-full border border-red-200 py-2 text-sm font-medium text-red-500 hover:bg-red-50"
+          className="mt-5 w-full rounded-full border border-red-200 py-2.5 text-sm font-semibold text-red-500 transition hover:bg-red-50"
         >
           Remove All
         </button>
+
       )}
 
     </aside>
