@@ -7,7 +7,7 @@ function Footer() {
           {/* Brand Section */}
           <div className="flex flex-col items-center text-center md:items-start md:text-left">
             <div className="flex items-center justify-center rounded-lg">
-              <img src="/src/assets/logo-text.png" alt="Dev Stack" />
+              <img src="./logo-text.png" alt="Dev Stack" />
             </div>
 
             <p className="mt-4 max-w-xs text-sm leading-6 text-gray-500">

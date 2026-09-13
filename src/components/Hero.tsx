@@ -33,7 +33,7 @@ function Hero() {
         <div className="flex justify-center">
           <div className="flex h-72 w-full max-w-md items-center justify-center rounded-3xl">
             <span>
-             <img src="/src/assets/banner-stack.png" alt="" />
+             <img src="./banner-stack.png" alt="" />
             </span>
           </div>
         </div>

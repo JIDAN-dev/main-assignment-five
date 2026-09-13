@@ -16,7 +16,7 @@ function Navbar() {
 
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <img src="/src/assets/logo-text.png"alt="Dev Stack"className="h-9 w-auto" />
+          <img src="./logo-text.png"alt="Dev Stack"className="h-9 w-auto" />
         </div>
 
         {/* Desktop Menu */}
