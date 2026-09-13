@@ -87,13 +87,13 @@ function TechnologySection({
 
         <h2 className="text-3xl font-bold text-gray-900">
           Explore the{" "}
-          <span className="bg-gradient-to-r from-orange-500 via-pink-500 to-violet-600 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-pink-600 via-pink-500 to-pink-700 bg-clip-text text-transparent">
             Technologies
           </span>
         </h2>
 
         <p className="mt-2 text-sm text-gray-500">
-          Pick the technologies you need to build your project.
+        Pick one technology per category to build your ideal stack.
         </p>
 
       </div>

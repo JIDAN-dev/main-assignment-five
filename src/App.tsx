@@ -5,6 +5,8 @@ import TechnologySection from "./components/TechnologySection";
 import YourStack from "./components/YourStack";
 import Footer from "./components/Footer";
 
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 interface Technology {
   id: string;
   name: string;
@@ -25,7 +27,6 @@ function App() {
 
       <Hero />
 
-     
 
       <main className="mx-auto max-w-7xl px-6 py-12">
 
@@ -46,6 +47,11 @@ function App() {
       </main> 
       
       < Footer/>
+
+        <ToastContainer
+      position="top-right"
+      autoClose={2000}
+    />
     </>
   );
 }

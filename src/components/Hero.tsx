@@ -4,7 +4,7 @@ function Hero() {
       <div className="mx-auto grid max-w-7xl items-center gap-12 md:grid-cols-2">
 
         <div>
-          <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-gray-500">
+          <p className="text-4xl font-bold leading-tight text-gray-900 sm:text-5xl lg:text-6xl">
             Build Your Ideal
           </p>
 
@@ -16,8 +16,8 @@ function Hero() {
           </h1>
 
           <p className="mt-6 max-w-xl text-base leading-7 text-gray-600 md:text-lg">
-            Discover the right technologies for your project and create a
-            powerful development stack that fits your needs.
+            Explore frontend, backend, database, and tooling options,
+            compare them side by side, and put together the stack that fits yournext project.
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
