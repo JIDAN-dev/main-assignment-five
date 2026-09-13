@@ -65,11 +65,7 @@ function TechnologyCard({
             iconBackground[technology.id] || "bg-gray-50"
           }`}
         >
-          <img
-            src={technology.icon}
-            alt={technology.name}
-            className="h-7 w-7 object-contain"
-          />
+          <img src={technology.icon}alt={technology.name}className="h-7 w-7 object-contain" />
         </div>
 
         {/* Badge */}
@@ -81,9 +77,7 @@ function TechnologyCard({
       </div>
 
       {/* Name */}
-      <h3 className="mt-4 text-base font-bold text-gray-900">
-        {technology.name}
-      </h3>
+      <h3 className="mt-4 text-base font-bold text-gray-900">{technology.name} </h3>
 
       {/* Description */}
       <p className="mt-1.5 min-h-[58px] text-[11px] leading-5 text-gray-500">
@@ -113,8 +107,7 @@ function TechnologyCard({
 
       {/* Add Button */}
       <button
-        onClick={() => onAdd(technology)}
-        disabled={isAdded}
+        onClick={() => onAdd(technology)}disabled={isAdded}
         className="mt-3 w-full rounded-md bg-gray-900 py-2 text-[11px] font-semibold text-white transition hover:bg-gray-700 disabled:cursor-not-allowed disabled:bg-gray-300"
       >
         {isAdded ? "✓ Added to Stack" : "Add to Stack"}

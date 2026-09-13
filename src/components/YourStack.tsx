@@ -72,17 +72,11 @@ function YourStack({
 
       </div>
 
-      {/* Empty State */}
+      {/* Empty State  important*/}
       {stack.length === 0 ? (
 
         <div className="rounded-xl border border-dashed border-gray-300 bg-gray-50 p-6 text-center">
-
-
-
-          <p className="mt-2 text-xs leading-5 text-gray-400">
-           Your stack is empty.
-          </p>
-
+          <p className="mt-2 text-xs leading-5 text-gray-400">Your stack is empty.</p>
         </div>
 
       ) : (
@@ -92,18 +86,11 @@ function YourStack({
 
           {stack.map((technology) => (
 
-            <div
-              key={technology.id}
-              className="flex items-center gap-3 rounded-xl border border-gray-100 bg-gray-50 p-3"
-            >
+            <div key={technology.id}className="flex items-center gap-3 rounded-xl border border-gray-100 bg-gray-50 p-3">
 
               {/* Icon */}
               <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white">
-                <img
-                  src={technology.icon}
-                  alt={technology.name}
-                  className="h-7 w-7 object-contain"
-                />
+                <img src={technology.icon}alt={technology.name}className="h-7 w-7 object-contain"/>
               </div>
 
               {/* Name + Category */}

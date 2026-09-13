@@ -59,7 +59,7 @@ function Navbar() {
 
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu all */}
       {menuOpen && (
         <div className="border-t border-gray-100 bg-white px-6 py-4 md:hidden">
 

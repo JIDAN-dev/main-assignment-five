@@ -14,7 +14,7 @@ function Footer() {
               Curated tools, technologies, and resources for developers building modern software.
             </p>
 
-            {/* Social Links (ডট শুধু মোবাইলে দেখাবে) */}
+            {/* Social Links dot dekhabe */}
             <div className="mt-5 flex items-center justify-center gap-3 text-sm text-gray-600 md:justify-start md:gap-5">
               <a href="#" className="hover:text-gray-900">GitHub</a>
               <span className="text-gray-400 md:hidden">&bull;</span>
@@ -24,7 +24,7 @@ function Footer() {
             </div>
           </div>
 
-          {/* Product */}
+          {/* Product  er jonno*/}
           <div className="hidden md:block">
             <h3 className="text-sm font-semibold text-gray-900">
               Product
@@ -42,7 +42,7 @@ function Footer() {
             </ul>
           </div>
 
-          {/* Company */}
+          {/* Company er jonno*/}
           <div className="hidden md:block">
             <h3 className="text-sm font-semibold text-gray-900">
               Company
@@ -60,7 +60,7 @@ function Footer() {
             </ul>
           </div>
 
-          {/* Legal */}
+          {/* Legal er jonno*/}
           <div className="hidden md:block">
             <h3 className="text-sm font-semibold text-gray-900">
               Legal
@@ -78,7 +78,7 @@ function Footer() {
         </div>
       </div>
 
-      {/* Bottom Bar */}
+      {/* Bottom er jonno*/}
       <div className="border-t border-gray-200">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 text-sm text-gray-500">
           <p>© 2026 Dev Stack. All rights reserved.</p>

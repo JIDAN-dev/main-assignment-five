@@ -21,8 +21,7 @@ interface TechnologySectionProps {
 
 function TechnologySection({
   stack,
-  setStack,
-}: TechnologySectionProps) {
+  setStack,}: TechnologySectionProps) {
 
   const [technologies, setTechnologies] = useState<Technology[]>([]);
   const [loading, setLoading] = useState(true);
@@ -58,7 +57,7 @@ function TechnologySection({
     );
   };
 
-  // Loading state
+  //loding
   if (loading) {
     return (
       <section>
@@ -82,7 +81,7 @@ function TechnologySection({
   return (
     <section>
 
-      {/* Section Heading */}
+      {/* Section Head */}
       <div className="mb-8">
 
         <h2 className="text-3xl font-bold text-gray-900">
@@ -98,7 +97,7 @@ function TechnologySection({
 
       </div>
 
-      {/* Technology Cards */}
+      {/* Tech Card */}
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
 
         {technologies.map((technology) => (
