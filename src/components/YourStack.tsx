@@ -48,7 +48,8 @@ function YourStack({
   };
 
   return (
-    <aside className="h-fit rounded-2xl border border-gray-200 bg-white p-5 shadow-sm lg:sticky lg:top-24">
+    <aside className="h-fit rounded-2xl border border-gray-200 bg-white p-5 shadow-sm lg:sticky lg:top-24 lg:mt-24 ">
+
 
       {/* Header */}
       <div className="mb-5 flex items-center justify-between">

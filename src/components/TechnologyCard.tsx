@@ -74,11 +74,7 @@ function TechnologyCard({
 
         {/* Badge */}
         <span
-          className={`rounded-full px-2.5 py-1 text-[10px] font-medium ${
-            badgeBackground[technology.id] ||
-            "bg-gray-50 text-gray-500"
-          }`}
-        >
+          className={`rounded-full px-2.5 py-1 text-[10px] font-medium ${badgeBackground[technology.id] ||"bg-gray-50 text-gray-500"}`} >
           {technology.badge}
         </span>
 

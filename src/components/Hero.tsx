@@ -9,9 +9,8 @@ function Hero() {
           </p>
 
           <h1 className="text-4xl font-bold leading-tight text-gray-900 sm:text-5xl lg:text-6xl">
-            Development{" "}
             <span className="bg-gradient-to-r from-orange-500 via-pink-500 to-violet-600 bg-clip-text text-transparent">
-              Stack
+              Development Stack
             </span>
           </h1>
 

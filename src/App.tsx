@@ -26,32 +26,19 @@ function App() {
       <Navbar />
 
       <Hero />
+    <main className="mx-auto max-w-7xl px-6 py-12">
+      <div className="grid grid-cols-1 gap-8 lg:grid-cols-[1fr_320px]">
 
+         <TechnologySection stack={stack} setStack={setStack} />
 
-      <main className="mx-auto max-w-7xl px-6 py-12">
-
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-[1fr_320px]">
-
-          <TechnologySection
-            stack={stack}
-            setStack={setStack}
-          />
-
-          <YourStack
-            stack={stack}
-            setStack={setStack}
-          />
+          <YourStack  stack={stack} setStack={setStack} />
 
         </div>
 
       </main> 
       
       < Footer/>
-
-        <ToastContainer
-      position="top-right"
-      autoClose={2000}
-    />
+        <ToastContainer  position="top-right" autoClose={2000} closeOnClick pauseOnHover/>
     </>
   );
 }
